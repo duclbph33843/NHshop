@@ -1,0 +1,64 @@
+.product-action__quickview,
+.product-action__addtocart {
+    color: chocolate; /* Đổi màu chữ thành màu vàng */
+}
+.product-actions-more {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-actions-more span {
+    margin: 0 20px; /* Khoảng cách 10px giữa các chữ */
+    text-align: center;
+}
+.banner {
+    position: relative;
+}
+
+.banner__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+}
+.banner__text span {
+    font-size: 12px; /* Cỡ chữ nhỏ */
+    display: block; /* Hiển thị trên một dòng mới */
+}
+
+.product-item {
+    margin-bottom: 30px; /* Khoảng cách giữa các hàng */
+}
+
+.product-item:last-child {
+    margin-bottom: 0; /* Loại bỏ khoảng cách dưới cùng */
+}
+
+.pagination {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.page,
+.next {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #faf3ea;
+    color: #333;
+    cursor: pointer;
+}
+
+.page:hover,
+.next:hover {
+    background-color: #9b9445;
+}
+
+.page.active {
+    background-color: #ccc;
+    color: #fff;
+    border-color: #ccc;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+        <link rel="stylesheet" href="./stype.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+        <link rel="stylesheet" href="./style.scss" />
+        <style>
+            .total {
+                width: 1519px;
+                height: 525px;
+                position: relative;
+            }
+
+            .inner-div {
+                width: 1319px;
+                height: 390px;
+                position: absolute;
+                top: 52px;
+                left: 100px;
+                background-color: white;
+            }
+            .left-div {
+                width: 847px;
+                height: 215px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: white;
+            }
+
+            .right-div {
+                width: 412px;
+                height: 390px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-color: #faf3ea; /* Đổi màu để dễ nhận biết */
+            }
+            .inner-left-div {
+                height: 55px;
+                width: 100%;
+                background-color: #faf3ea;
+                display: flex; /* Sử dụng flexbox */
+                align-items: center; /* Canh chính giữa theo chiều dọc */
+            }
+
+            .inner-left-div div {
+                margin-right: 20px; /* Khoảng cách giữa các div */
+            }
+            .inner-left-div div {
+                margin-right: 30px; /* Khoảng cách giữa div 1 và div 2 */
+            }
+
+            .inner-left-div div:nth-child(2) {
+                margin-right: 60px; /* Khoảng cách giữa div 2 và div 3 */
+            }
+
+            .inner-left-div div:nth-child(3) {
+                margin-right: 85px; /* Khoảng cách giữa div 3 và div 4 */
+            }
+
+            .product,
+            .price,
+            .quantity,
+            .subtotal {
+                width: 100px; /* Điều chỉnh kích thước của mỗi div */
+                text-align: center; /* Canh giữa văn bản */
+            }
+            .left-div img {
+                position: absolute;
+                bottom: 0;
+                left: 0; /* hoặc right: 0; nếu bạn muốn ảnh nằm sát mép phải */
+            }
+            .trong {
+                height: 120px;
+                width: 80px; /* Đặt chiều cao của div trống là 100px */
+            }
+            .inner-left-div1 {
+                display: flex;
+                align-items: center; /* Canh các phần tử theo chiều dọc */
+            }
+
+            .inner-div2 {
+                display: flex;
+                align-items: center; /* Canh các phần tử bên trong theo chiều dọc */
+            }
+
+            img {
+                vertical-align: middle; /* Canh ảnh theo chiều dọc */
+                width: 108px; /* Kích thước của ảnh */
+                height: 105px;
+            }
+
+            .asgaard, .vnd, .imput, .vnd2 {
+                margin-left: 10px; /* Khoảng cách giữa các phần tử bên trong inner-div2 */
+            }
+            .inner-div2{
+                margin-left: 120px;
+                margin-top: 95px;
+            }
+            .asgaard {
+                margin-right: 55px; /* Khoảng cách giữa .asgaard và .vnd */
+            }
+            .input input.input1 {
+                width: 32px; /* Độ rộng */
+                height: 32px; /* Chiều cao */
+            }
+            .input {
+                margin-right: 65px;
+            }
+
+            .vnd {
+                margin-right: 85px;
+            }
+            .cart-totals {
+                text-align: center; /* Căn giữa nội dung */
+                font-size: 32px; /* Cỡ chữ 32px */
+                margin-top: -15px;
+            }
+            .right-div .button button {
+                height: 59px;
+                width: 222px;
+                border-radius: 10px; /* Điều chỉnh giá trị để thay đổi độ cong của góc */
+                margin-top: 30px;
+            }
+            .right-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center; /* căn nội dung theo chiều ngang vào giữa */
+            }
+
+            .right-div .subtotal {
+                margin-top: 30px;
+                margin-left: 0px;
+            }
+            .right-div .total1 {
+                margin-top: 50px;
+                margin-left: 13px;
+            }
+            .after .total1,
+            .after .vnd4 {
+                display: inline-block;
+            }
+            .after .vnd4 {
+                font-size: 20px;
+                font-weight: bold; /* In đậm */
+                color: rgb(160, 160, 75); /* Màu vàng */
+            }
+            .after .total1 {
+                margin-right: 115px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .before .subtotal,
+            .before .vnd3 {
+                display: inline-block;
+            }
+            .before .subtotal {
+                margin-right: 100px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .banner__text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            .banner__text h2 {
+                font-size: 48px;
+                margin-bottom: 123px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="" class="header__logo">
+                        <img src="./assets/logo.svg" alt="" />
+                    </a>
+                    <div class="button-mobile"><button>=</button></div>
+                    <nav class="main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item">
+                                <a href="./index.html" class="main-menu__link">Home</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="./shop.html" class="main-menu__link">Shop</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="" class="main-menu__link">About</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="" class="main-menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-items">
+                        <div class="header-item-user">
+                            <span><img src="./assets/icons/1.svg" /></span>
+                        </div>
+                        <div class="header-item-user">
+                            <span><img src="./assets/icons/2.svg" /></span>
+                        </div>
+                        <div class="header-item-user">
+                            <span><img src="./assets/icons/3.svg" /></span>
+                        </div>
+                        <div class="header-item-user">
+                            <span><a href="./cart.html"><img src="./assets/icons/4.svg" /></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="banner">
+            <img src="https://picsum.photos/id/10/1440/500" alt="" class="banner__img" />
+            <div class="banner__text">
+                <h2>Cart</h2>
+            </div>
+        </section>
+        <!--End .banner-->
+       <section class="cart">
+            <div class="total">
+                <div class="inner-div">
+                    <div class="left-div">
+                        <div class="inner-left-div">
+                            <div class="trong"></div>
+                            <div class="product">Product</div>
+                            <div class="price">Price</div>
+                            <div class="quantity">Quantity</div>
+                            <div class="subtotal">Subtotal</div>
+                        </div>
+                        <div class="inner-left-div1">
+                            <img src="https://picsum.photos/id/10/108/105" alt="Image">
+                            <div class="inner-div2">
+                            <div class="asgaard">Asgaard sofa</div>
+                            <div class="vnd">25.000.000đ</div>
+                            <div class="input">
+                                <input class="input1" type="number" value="1">
+                            </div>
+                            <div class="vnd2">25.000.000đ</div>
+                            <div class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-div">
+                        <div class="cart-totals"><h4>Cart-Totals</h4></div>
+                        <div class="before">
+                            <div class="subtotal">Subtotal</div>
+                            <div class="vnd3">25.000.000đ</div>
+                        </div>
+                        <div class="after">
+                            <div class="total1">Total</div>
+                            <div class="vnd4">25.000.000đ</div>
+                        </div>
+                        <div class="button"><button>Check Out</button></div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+        <section class="services">
+            <div class="container-fluid">
+                <div class="service-list">
+                    <div class="service-item">
+                        <img src="./assets/icons/10.svg" class="service__image" />
+                        <div class="service-info">
+                            <h4 class="service__name">High Quality</h4>
+                            <p class="service__description">crafted from top materials</p>
+                        </div>
+                    </div>
+                    <!--End service-item-->
+                    <div class="service-item">
+                        <img src="./assets/icons/11.svg" class="service__image" />
+                        <div class="service-info">
+                            <h4 class="service__name">High Quality</h4>
+                            <p class="service__description">crafted from top materials</p>
+                        </div>
+                    </div>
+                    <!--End service-item-->
+                    <div class="service-item">
+                        <img src="./assets/icons/12.svg" class="service__image" />
+                        <div class="service-info">
+                            <h4 class="service__name">High Quality</h4>
+                            <p class="service__description">crafted from top materials</p>
+                        </div>
+                    </div>
+                    <!--End service-item-->
+                    <div class="service-item">
+                        <img src="./assets/icons/13.svg" class="service__image" />
+                        <div class="service-info">
+                            <h4 class="service__name">High Quality</h4>
+                            <p class="service__description">crafted from top materials</p>
+                        </div>
+                    </div>
+                    <!--End service-item-->
+                </div>
+            </div>
+        </section>
+        <!--End .services-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-list">
+                    <div class="footer-item">
+                        <img src="./assets/logo.svg" alt="" />
+                        <p class="footer__address">
+                            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+                        </p>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-item">
+                            <h2 class="footer__title">Links</h2>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Home</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Shop</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Blog</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <h2 class="footer__title">Help</h2>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Payment Options</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Returns</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Privacy Policies</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <h2 class="footer__title">Newsletter</h2>
+                        <form action="" class="newsletter">
+                            <input
+                                type="text"
+                                class="newsletter__input"
+                                placeholder="Enter Your Email Address"
+                            />
+                            <button class="newsletter__btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="copyright">2023 furino. All rights reverved</p>
+            </div>
+        </footer>
+    </body>
+</html>
