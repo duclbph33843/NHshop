@@ -1,0 +1,113 @@
+.news {
+    margin-top: 40px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.pink-background {
+    position: absolute;
+    bottom: -240px;
+    left: -750px;
+    /* Mở rộng ra bên trái 750px (500px + 250px) */
+    width: calc(100% + 1500px);
+    height: 100px;
+    background-color: #faf3ea;
+    z-index: -1;
+    /* Đảm bảo phần div pink-background hiển thị phía sau phần banner */
+    margin-top: 40px;
+    /* Điều chỉnh khoảng cách từ phần "Shop" xuống phần div pink-background */
+}
+
+.banner__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner__text h2 {
+    font-size: 48px;
+    margin-bottom: 123px;
+}
+
+.filter-showing {
+    position: absolute;
+    left: 98px;
+    /* Điều chỉnh lề trái */
+    top: 40px;
+    /* Điều chỉnh lề trên */
+    font-size: 20px;
+    color: #333;
+    /* Màu chữ */
+}
+
+.showing-input {
+    width: 55px;
+    /* Độ rộng của input */
+    height: 55px;
+    /* Độ cao của input */
+    border-radius: 10px;
+}
+
+.showing,
+.showing-input {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    /* Khoảng cách giữa chữ và input */
+}
+
+.showing-input label {
+    float: right;
+    /* Di chuyển chữ sang bên phải */
+    margin-right: 15px;
+    /* Khoảng cách giữa chữ và input */
+}
+
+.showing-input input {
+    float: right;
+    /* Di chuyển ô input sang bên phải */
+    width: 10%;
+    /* Chiều rộng ô input */
+    max-width: 55px;
+    /* Chiều rộng tối đa */
+    height: 55px;
+    /* Chiều cao */
+    margin-right: 200px;
+    /* Giữ cách bên phải 200px */
+}
+
+.show {
+    float: left;
+    /* Di chuyển về phía phải */
+    margin-left: 897px;
+    /* Di chuyển sang phải 897px */
+    margin-top: 20px;
+}
+
+.short {
+    float: left;
+    /* Di chuyển về phía phải */
+    margin-left: 1110px;
+    /* Di chuyển sang phải 897px */
+    margin-top: -60px;
+}
+
+.shor-input {
+    height: 55px;
+    width: 188px;
+    border-radius: 8px;
+}

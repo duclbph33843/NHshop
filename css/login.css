@@ -1,0 +1,244 @@
+.login {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+}
+
+.x {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+
+.login .x {
+    position: absolute;
+    /* Đặt vị trí tuyệt đối cho .x */
+    top: 10;
+    /* Cách trên */
+    right: 0;
+    /* Cách phải */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #B88E2F;
+}
+
+.login .header {
+    position: absolute;
+    /* Đặt vị trí tuyệt đối cho .header */
+    top: 54px;
+    /* Cách trên */
+    left: 358px;
+    /* Cách trái */
+}
+
+.company label {
+    display: block;
+    /* Hiển thị nhãn dưới dạng khối để nó chiếm một dòng riêng biệt */
+    margin-bottom: 5px;
+    /* Khoảng cách giữa nhãn và input */
+    margin-left: 88px;
+    margin-top: 129px;
+    /* Khoảng cách từ trái */
+}
+
+.company .input {
+    display: block;
+    /* Hiển thị input dưới dạng khối */
+    margin-left: 88px;
+    /* Khoảng cách từ trái */
+}
+
+.company {
+    display: inline-block;
+    /* Để các thành phần hiển thị trên cùng một hàng */
+    margin-bottom: 50px;
+    /* Khoảng cách giữa các thành phần */
+}
+
+.company input[type="text"],
+.company input[type="password"] {
+    width: 600px;
+    /* Chiều dài */
+    height: 60px;
+    /* Chiều cao */
+    border-radius: 10px;
+    /* Bo góc */
+    border: 1px solid #ccc;
+    /* Đường viền */
+    padding: 10px;
+    /* Khoảng cách từ nội dung đến viền */
+}
+
+.company label,
+.company input {
+    display: block;
+    /* Hiển thị nhãn và input dưới dạng khối để chúng xuất hiện trên các dòng riêng biệt */
+    color: #B88E2F;
+}
+
+.company label {
+    margin-bottom: 10px;
+    /* Khoảng cách giữa các nhãn */
+}
+
+.company input {
+    margin-bottom: -800px;
+    /* Khoảng cách giữa các input */
+}
+
+.company label {
+    display: block;
+    /* Hiển thị nhãn dưới dạng khối để nó chiếm một dòng riêng biệt */
+    margin-bottom: 5px;
+    /* Khoảng cách giữa nhãn và input */
+    margin-left: 88px;
+    margin-top: 129px;
+    /* Khoảng cách từ trái */
+}
+
+.company .input {
+    display: block;
+    /* Hiển thị input dưới dạng khối */
+    margin-left: 88px;
+    /* Khoảng cách từ trái */
+}
+
+.company1 {
+    display: inline-block;
+    /* Để các thành phần hiển thị trên cùng một hàng */
+    margin-bottom: 50px;
+    /* Khoảng cách giữa các thành phần */
+}
+
+.company1 label {
+    display: block;
+    /* Hiển thị nhãn dưới dạng khối để nó chiếm một dòng riêng biệt */
+    margin-bottom: 5px;
+    /* Khoảng cách giữa nhãn và input */
+    margin-left: 88px;
+    margin-top: 50px;
+    /* Khoảng cách từ trái */
+}
+
+.company1 input[type="text"],
+.company1 input[type="password"] {
+    width: 600px;
+    /* Chiều dài */
+    height: 60px;
+    /* Chiều cao */
+    border-radius: 10px;
+    /* Bo góc */
+    border: 1px solid #ccc;
+    /* Đường viền */
+    padding: 10px;
+    /* Khoảng cách từ nội dung đến viền */
+}
+
+.company1 label,
+.company1 input {
+    display: block;
+    /* Hiển thị nhãn và input dưới dạng khối để chúng xuất hiện trên các dòng riêng biệt */
+    color: #B88E2F;
+}
+
+.company1 label {
+    margin-bottom: 10px;
+    /* Khoảng cách giữa các nhãn */
+}
+
+.company1 input {
+    margin-bottom: -800px;
+    /* Khoảng cách giữa các input */
+}
+
+.company1 .input {
+    display: block;
+    /* Hiển thị input dưới dạng khối */
+    margin-left: 88px;
+    /* Khoảng cách từ trái */
+}
+
+.btn-login {
+    width: 149px;
+    /* Chiều dài */
+    height: 64px;
+    /* Chiều cao */
+}
+
+.btn-login button {
+    width: 100%;
+    /* Chiều dài nút sẽ bằng với chiều dài của div */
+    height: 100%;
+    /* Chiều cao nút sẽ bằng với chiều cao của div */
+}
+
+.btn-login button {
+    width: 149px;
+    /* Chiều dài */
+    height: 64px;
+    /* Chiều cao */
+    margin-top: 62px;
+    margin-left: 326px;
+    border-radius: 10px;
+    /* Bo góc */
+    background-color: #F9F1E7;
+    /* Màu nền */
+    font-size: 20px;
+    /* Kích thước văn bản */
+    font-weight: bold;
+}
+
+.btn-log {
+    display: flex;
+    /* Sử dụng flexbox để sắp xếp các nút theo hàng ngang */
+    justify-content: space-between;
+    /* Canh các nút ra hai bên */
+    margin-bottom: 154px;
+}
+
+.fb button {
+    width: 191px;
+    /* Chiều dài nút Facebook */
+    height: 64px;
+    /* Chiều cao nút Facebook */
+    border-radius: 10px;
+    background-color: #0171D3;
+    color: #FFFFFF;
+    /* Màu văn bản */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gg button {
+    width: 167px;
+    /* Chiều dài nút Google */
+    height: 64px;
+    /* Chiều cao nút Google */
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fb {
+    margin-left: 132px;
+    /* Khoảng cách từ bên trái */
+    width: calc((100% - 154px) / 2);
+    /* Kích thước của mỗi div */
+}
+
+.fb,
+.gg {
+    width: calc((100% - 154px) / 2);
+    /* Kích thước của mỗi div */
+}
+
+.btn-log {
+    margin-top: 85px;
+}
