@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+        <style>
+            .banner__text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            .banner__text h2 {
+                font-size: 48px;
+                margin-bottom: 123px;
+            }
+        </style>
+      <link rel="stylesheet" crossorigin href="/assets/style-En_6cC7g.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="" class="header__logo">
+                        <img src="/assets/logo-BBJ7Vw_Y.svg" alt="" />
+                    </a>
+                    <div class="button-mobile"><button>=</button></div>
+                    <nav class="main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item">
+                                <a href="./index.html" class="main-menu__link">Home</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="./shop.html" class="main-menu__link">Shop</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="" class="main-menu__link">About</a>
+                            </li>
+                            <li class="main-menu__item">
+                                <a href="" class="main-menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-items">
+                        <div class="header-item-user">
+                            <span><a href="./login.html"><img src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M23.3333%2014V8.16663H25.6666V15.1666H23.3333M23.3333%2019.8333H25.6666V17.5H23.3333M11.6666%2015.1666C14.7816%2015.1666%2020.9999%2016.73%2020.9999%2019.8333V23.3333H2.33325V19.8333C2.33325%2016.73%208.55159%2015.1666%2011.6666%2015.1666ZM11.6666%204.66663C12.9043%204.66663%2014.0912%205.15829%2014.9664%206.03346C15.8416%206.90863%2016.3333%208.09562%2016.3333%209.33329C16.3333%2010.571%2015.8416%2011.758%2014.9664%2012.6331C14.0912%2013.5083%2012.9043%2014%2011.6666%2014C10.4289%2014%209.24192%2013.5083%208.36675%2012.6331C7.49158%2011.758%206.99992%2010.571%206.99992%209.33329C6.99992%208.09562%207.49158%206.90863%208.36675%206.03346C9.24192%205.15829%2010.4289%204.66663%2011.6666%204.66663ZM11.6666%2017.3833C8.20159%2017.3833%204.54992%2019.0866%204.54992%2019.8333V21.1166H18.7833V19.8333C18.7833%2019.0866%2015.1316%2017.3833%2011.6666%2017.3833ZM11.6666%206.88329C11.0168%206.88329%2010.3936%207.14142%209.93417%207.60088C9.47471%208.06034%209.21659%208.68351%209.21659%209.33329C9.21659%209.98307%209.47471%2010.6062%209.93417%2011.0657C10.3936%2011.5252%2011.0168%2011.7833%2011.6666%2011.7833C12.3164%2011.7833%2012.9395%2011.5252%2013.399%2011.0657C13.8585%2010.6062%2014.1166%209.98307%2014.1166%209.33329C14.1166%208.68351%2013.8585%208.06034%2013.399%207.60088C12.9395%207.14142%2012.3164%206.88329%2011.6666%206.88329Z'%20fill='black'/%3e%3c/svg%3e" /></a></span>
+                        </div>
+                        <div class="header-item-user">
+                            <span><img src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M24.4999%2024.5L19.2663%2019.257M22.1666%2012.25C22.1666%2014.8801%2021.1218%2017.4024%2019.2621%2019.2622C17.4023%2021.1219%2014.88%2022.1667%2012.2499%2022.1667C9.61985%2022.1667%207.09751%2021.1219%205.23778%2019.2622C3.37804%2017.4024%202.33325%2014.8801%202.33325%2012.25C2.33325%209.61998%203.37804%207.09763%205.23778%205.2379C7.09751%203.37816%209.61985%202.33337%2012.2499%202.33337C14.88%202.33337%2017.4023%203.37816%2019.2621%205.2379C21.1218%207.09763%2022.1666%209.61998%2022.1666%2012.25V12.25Z'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'/%3e%3c/svg%3e" /></span>
+                        </div>
+                        <div class="header-item-user">
+                            <span><img src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.16659%203.5C4.94542%203.5%202.33325%206.08533%202.33325%209.275C2.33325%2011.8498%203.35409%2017.9608%2013.4026%2024.1383C13.5826%2024.2479%2013.7892%2024.3058%2013.9999%2024.3058C14.2106%2024.3058%2014.4173%2024.2479%2014.5973%2024.1383C24.6458%2017.9608%2025.6666%2011.8498%2025.6666%209.275C25.6666%206.08533%2023.0544%203.5%2019.8333%203.5C16.6121%203.5%2013.9999%207%2013.9999%207C13.9999%207%2011.3878%203.5%208.16659%203.5Z'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" /></span>
+                        </div>
+                        <div class="header-item-user">
+                            <span><a href="./cart.html"><img src="data:image/svg+xml,%3csvg%20width='28'%20height='28'%20viewBox='0%200%2028%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M25.2354%2019.1926H8.95225L9.76982%2017.5273L23.3542%2017.5027C23.8136%2017.5027%2024.2073%2017.1746%2024.2894%2016.7207L26.1706%206.19062C26.2198%205.91445%2026.146%205.63008%2025.9655%205.41406C25.8763%205.30775%2025.7651%205.22211%2025.6395%205.16309C25.5139%205.10407%2025.377%205.07308%2025.2382%205.07227L7.95693%205.01484L7.80928%204.32031C7.71631%203.87734%207.31709%203.55469%206.86318%203.55469H2.63857C2.38258%203.55469%202.13707%203.65638%201.95605%203.8374C1.77503%204.01841%201.67334%204.26393%201.67334%204.51992C1.67334%204.77592%201.77503%205.02143%201.95605%205.20245C2.13707%205.38346%202.38258%205.48516%202.63857%205.48516H6.08115L6.72646%208.55312L8.31514%2016.2449L6.26982%2019.5836C6.16361%2019.727%206.09963%2019.8972%206.08514%2020.075C6.07064%2020.2528%206.1062%2020.4312%206.18779%2020.5898C6.35186%2020.9152%206.68271%2021.1203%207.04912%2021.1203H8.76631C8.40023%2021.6065%208.20249%2022.1988%208.20303%2022.8074C8.20303%2024.3551%209.46084%2025.6129%2011.0085%2025.6129C12.5562%2025.6129%2013.814%2024.3551%2013.814%2022.8074C13.814%2022.1977%2013.6116%2021.6043%2013.2507%2021.1203H17.6558C17.2897%2021.6065%2017.0919%2022.1988%2017.0925%2022.8074C17.0925%2024.3551%2018.3503%2025.6129%2019.8979%2025.6129C21.4456%2025.6129%2022.7034%2024.3551%2022.7034%2022.8074C22.7034%2022.1977%2022.5011%2021.6043%2022.1401%2021.1203H25.2382C25.7687%2021.1203%2026.2034%2020.6883%2026.2034%2020.1551C26.2018%2019.8994%2026.0992%2019.6546%2025.9178%2019.4743C25.7365%2019.294%2025.4912%2019.1927%2025.2354%2019.1926ZM8.35889%206.91797L24.1034%206.96992L22.5612%2015.6051L10.1937%2015.627L8.35889%206.91797ZM11.0085%2023.6715C10.5327%2023.6715%2010.1444%2023.2832%2010.1444%2022.8074C10.1444%2022.3316%2010.5327%2021.9434%2011.0085%2021.9434C11.4843%2021.9434%2011.8726%2022.3316%2011.8726%2022.8074C11.8726%2023.0366%2011.7815%2023.2564%2011.6195%2023.4184C11.4574%2023.5805%2011.2377%2023.6715%2011.0085%2023.6715ZM19.8979%2023.6715C19.4222%2023.6715%2019.0339%2023.2832%2019.0339%2022.8074C19.0339%2022.3316%2019.4222%2021.9434%2019.8979%2021.9434C20.3737%2021.9434%2020.762%2022.3316%2020.762%2022.8074C20.762%2023.0366%2020.671%2023.2564%2020.5089%2023.4184C20.3469%2023.5805%2020.1271%2023.6715%2019.8979%2023.6715Z'%20fill='black'/%3e%3c/svg%3e" /></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="banner">
+            <img src="https://picsum.photos/id/10/1440/500" alt="" class="banner__img" />
+            <div class="banner__text">
+                <h2>Trang chủ</h2>
+            </div>
+        </section>
+        <!--End .banner-->
+        <section class="news">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-heading__title">New</h2>
+                </div>
+                <div class="section-body">
+                    <div class="product-list">
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img
+                                    src="https://picsum.photos/id/10/300/300"
+                                    alt=""
+                                    class="product__thumbnail"
+                                />
+                                <span class="product-sale">30%</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product__name">
+                                    <a href="" class="product__link">Syltherine</a>
+                                </h3>
+                                <a href="" class="product__category">Stylish cafe chair</a>
+                                <div class="product-price">
+                                    <span class="product-price__new">$200</span>
+                                    <span class="product-price__old">$300</span>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn product-action__quickview">Quick View</button>
+                                <button class="btn product-action__addtocart">Add To Cart</button>
+                                <div class="product-actions-more">
+                                    <span class="product-action__share">Share</span>
+                                    <span class="product-action__compare">Compare</span>
+                                    <span class="product-action__like">Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End .product-item-->
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img
+                                    src="https://picsum.photos/id/10/300/300"
+                                    alt=""
+                                    class="product__thumbnail"
+                                />
+                                <span class="product-new">New</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product__name">
+                                    <a href="" class="product__link">Syltherine</a>
+                                </h3>
+                                <a href="" class="product__category">Stylish cafe chair</a>
+                                <div class="product-price">
+                                    <span class="product-price__new">$200</span>
+                                    <span class="product-price__old">$300</span>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn product-action__quickview">Quick View</button>
+                                <button class="btn product-action__addtocart">Add To Cart</button>
+                                <div class="product-actions-more">
+                                    <span class="product-action__share">Share</span>
+                                    <span class="product-action__compare">Compare</span>
+                                    <span class="product-action__like">Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End .product-item-->
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img
+                                    src="https://picsum.photos/id/10/300/300"
+                                    alt=""
+                                    class="product__thumbnail"
+                                />
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product__name">
+                                    <a href="" class="product__link">Syltherine</a>
+                                </h3>
+                                <a href="" class="product__category">Stylish cafe chair</a>
+                                <div class="product-price">
+                                    <span class="product-price__new">$200</span>
+                                    <span class="product-price__old">$300</span>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn product-action__quickview">Quick View</button>
+                                <button class="btn product-action__addtocart">Add To Cart</button>
+                                <div class="product-actions-more">
+                                    <span class="product-action__share">Share</span>
+                                    <span class="product-action__compare">Compare</span>
+                                    <span class="product-action__like">Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End .product-item-->
+                        <div class="product-item">
+                            <div class="product-image">
+                                <img
+                                    src="https://picsum.photos/id/10/300/300"
+                                    alt=""
+                                    class="product__thumbnail"
+                                />
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product__name">
+                                    <a href="" class="product__link">Syltherine</a>
+                                </h3>
+                                <a href="" class="product__category">Stylish cafe chair</a>
+                                <div class="product-price">
+                                    <span class="product-price__new">500.000</span>
+                                    <span class="product-price__old">$300</span>
+                                </div>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn product-action__quickview">Quick View</button>
+                                <button class="btn product-action__addtocart">Add To Cart</button>
+                                <div class="product-actions-more">
+                                    <span class="product-action__share">Share</span>
+                                    <span class="product-action__compare">Compare</span>
+                                    <span class="product-action__like">Like</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End .product-item-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <hr />
+        </div>
+        <!--End .news-->
+        <section class="shop">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-heading__title">Shop</h2>
+                </div>
+                <div class="section-body">
+                    <div class="shops">
+                        <div class="shop-item">
+                            <a href="" class="shop__link"
+                                ><img
+                                    src="https://picsum.photos/id/12/665/500"
+                                    alt=""
+                                    class="shop__image"
+                            /></a>
+                        </div>
+                        <div class="shop-item">
+                            <a href="" class="shop__link"
+                                ><img
+                                    src="https://picsum.photos/id/13/665/500"
+                                    alt=""
+                                    class="shop__image"
+                            /></a>
+                        </div>
+                        <div class="shop-item">
+                            <a href="" class="shop__link"
+                                ><img
+                                    src="https://picsum.photos/id/14/665/500"
+                                    alt=""
+                                    class="shop__image"
+                            /></a>
+                        </div>
+                        <div class="shop-item">
+                            <a href="" class="shop__link"
+                                ><img
+                                    src="https://picsum.photos/id/15/665/500"
+                                    alt=""
+                                    class="shop__image"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End .shop-->
+        <section class="blog">
+            <div class="container">
+                <div class="section-heading section-blog-heading">
+                    <h2 class="section-heading__title">Blog</h2>
+                </div>
+                <div class="section-body">
+                    <div class="post-list">
+                        <div class="post-item">
+                            <div class="post-image">
+                                <a href="">
+                                    <img
+                                        src="https://picsum.photos/id/16/665/250"
+                                        alt=""
+                                        class="post__thumbnail"
+                                    />
+                                </a>
+                            </div>
+                            <div class="post-info">
+                                <h3 class="post__title">
+                                    <a href="" class="post__link">THE ULTIMATE SOFA BUYING GUIDE</a>
+                                </h3>
+                                <p class="post__excerpt">
+                                    The versatility of our living space is more crucial than ever.
+                                    But buying a sofa might be a difficult undertaking. Your needs
+                                    and the size of your living area will determine everything,
+                                    However, don’t worry, were are here to help you
+                                </p>
+                                <a href="" class="post__readmore">Readmore</a>
+                            </div>
+                        </div>
+                        <!--End .post-item-->
+                        <div class="post-item">
+                            <div class="post-image">
+                                <a href="">
+                                    <img
+                                        src="https://picsum.photos/id/17/665/250"
+                                        alt=""
+                                        class="post__thumbnail"
+                                    />
+                                </a>
+                            </div>
+                            <div class="post-info">
+                                <h3 class="post__title">
+                                    <a href="" class="post__link">THE ULTIMATE SOFA BUYING GUIDE</a>
+                                </h3>
+                                <p class="post__excerpt">
+                                    The versatility of our living space is more crucial than ever.
+                                    But buying a sofa might be a difficult undertaking. Your needs
+                                    and the size of your living area will determine everything,
+                                    However, don’t worry, were are here to help you
+                                </p>
+                                <a href="" class="post__readmore">Readmore</a>
+                            </div>
+                        </div>
+                        <!--End .post-item-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End .blog-->
+
+        <section class="services">
+            <div class="container-fluid">
+                <div class="service-list">
+                    <div class="service-item">
+                        <img src="data:image/svg+xml,%3csvg%20width='54'%20height='60'%20viewBox='0%200%2054%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M46.3547%203.51562C45.0744%203.51562%2043.8741%203.86121%2042.839%204.46156V1.75781C42.839%200.787031%2042.052%200%2041.0812%200H12.9562C11.9853%200%2011.1983%200.787031%2011.1983%201.75781V4.48301C10.155%203.8693%208.94102%203.51562%207.64551%203.51562C3.76848%203.51562%200.614258%206.66984%200.614258%2010.5469C0.614258%2013.5041%201.49059%2016.3615%203.14844%2018.8102C5.97078%2022.9789%209.45113%2024.0607%2012.331%2025.2127C13.9916%2029.348%2017.3496%2032.6252%2021.5384%2034.1769L20.2422%2042.4219H19.9875C17.0797%2042.4219%2014.714%2044.7875%2014.714%2047.6953V56.4844H12.9562C11.9854%2056.4844%2011.1984%2057.2714%2011.1984%2058.2422C11.1984%2059.213%2011.9854%2060%2012.9562%2060H41.0812C42.052%2060%2042.839%2059.213%2042.839%2058.2422C42.839%2057.2714%2042.052%2056.4844%2041.0812%2056.4844H39.3234V47.6953C39.3234%2044.7875%2036.9577%2042.4219%2034.05%2042.4219H33.7952L32.4991%2034.177C36.6941%2032.623%2040.0558%2029.3386%2041.7139%2025.1948C44.4344%2024.1066%2048.0005%2023.0217%2050.8518%2018.8102C52.5097%2016.3615%2053.386%2013.504%2053.386%2010.5469C53.3859%206.66984%2050.2317%203.51562%2046.3547%203.51562ZM11.1853%2020.968C6.89926%2019.2536%204.12988%2015.1631%204.12988%2010.5469C4.12988%208.60836%205.70699%207.03125%207.64551%207.03125C9.58402%207.03125%2011.1611%208.60836%2011.1611%2010.5469C11.1611%2010.6705%2011.1741%2010.791%2011.1984%2010.9073V19.3359C11.1984%2019.9009%2011.2288%2020.4588%2011.2869%2021.0087L11.1853%2020.968ZM35.8078%2056.4844H18.2296V52.9688H35.8078V56.4844ZM34.05%2045.9375C35.0192%2045.9375%2035.8078%2046.7261%2035.8078%2047.6953V49.4531H18.2296V47.6953C18.2296%2046.7261%2019.0182%2045.9375%2019.9875%2045.9375C20.9411%2045.9375%2031.8134%2045.9375%2034.05%2045.9375ZM23.801%2042.4219L24.9642%2035.023C25.6368%2035.1107%2026.3225%2035.1562%2027.0187%2035.1562C27.7149%2035.1562%2028.4006%2035.1105%2029.0732%2035.023L30.2364%2042.4219H23.801ZM39.3234%2019.3359C39.3234%2026.1207%2033.8035%2031.6406%2027.0187%2031.6406C20.2339%2031.6406%2014.714%2026.1207%2014.714%2019.3359V10.5469H39.3234V19.3359ZM39.3234%207.03125H14.714V3.51562H39.3234V7.03125ZM42.8148%2020.968L42.7523%2020.993C42.8093%2020.4483%2042.8389%2019.8955%2042.8389%2019.3359V10.5469C42.839%208.60836%2044.4161%207.03125%2046.3547%207.03125C48.2932%207.03125%2049.8703%208.60836%2049.8703%2010.5469C49.8703%2015.1631%2047.1009%2019.2537%2042.8148%2020.968Z'%20fill='%23242424'/%3e%3c/svg%3e" class="service__image" />
+                        <div class="service-info">
+                            <h4 class="service__name">High Quality</h4>
+                            <p class="service__description">crafted from top materials</p>
+                        </div>
+                    </div>
+                    <!--End service-item-->
+                    <div class="service-item">
+                        <img src="data:image/svg+xml,%3csvg%20width='61'%20height='60'%20viewBox='0%200%2061%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_0_810)'%3e%3cpath%20d='M57.1193%2021.2611C56.3275%2018.8096%2056.6651%2015.1295%2054.6072%2012.2881C52.5333%209.42425%2048.9261%208.61027%2046.8893%207.12058C44.8739%205.6466%2042.9989%202.43906%2039.6088%201.33281C36.3143%200.25773%2032.9454%201.7166%2030.3333%201.7166C27.7215%201.7166%2024.3528%200.257378%2021.0577%201.33269C17.6682%202.43871%2015.7917%205.64695%2013.7776%207.12023C11.743%208.60816%208.13313%209.42437%206.0595%2012.2877C4.00345%2015.1268%204.33755%2018.8153%203.54724%2021.261C2.79513%2023.5887%200.333252%2026.3823%200.333252%2030.0002C0.333252%2033.6202%202.79231%2036.403%203.54724%2038.7392C4.33895%2041.1907%204.00146%2044.8708%206.05927%2047.7122C8.13313%2050.5762%2011.7402%2051.39%2013.7772%2052.8798C15.7923%2054.3536%2017.6676%2057.5614%2021.0577%2058.6675C24.35%2059.7419%2027.7242%2058.2837%2030.3333%2058.2837C32.9387%2058.2837%2036.3207%2059.7403%2039.6088%2058.6676C42.9984%2057.5616%2044.8738%2054.3541%2046.8889%2052.8801C48.9235%2051.3921%2052.5334%2050.5759%2054.607%2047.7126C56.6632%2044.8734%2056.3288%2041.1852%2057.1193%2038.7393C57.8714%2036.4115%2060.3333%2033.6178%2060.3333%2030.0002C60.3333%2026.3803%2057.8748%2023.5983%2057.1193%2021.2611ZM52.659%2037.2979C51.7361%2040.1543%2051.9779%2043.3511%2050.8107%2044.9629C49.6278%2046.5961%2046.5201%2047.3421%2044.1221%2049.0962C41.7504%2050.8307%2040.0881%2053.5803%2038.1547%2054.2111C36.3256%2054.808%2033.3449%2053.596%2030.3334%2053.596C27.2999%2053.596%2024.3498%2054.8106%2022.5119%2054.2111C20.5788%2053.5803%2018.9188%2050.8326%2016.5445%2049.0961C14.1607%2047.3527%2011.0353%2046.5913%209.85579%2044.9627C8.69235%2043.3562%208.92497%2040.1373%208.00774%2037.298C7.10868%2034.5161%205.02075%2032.1073%205.02075%2030.0002C5.02075%2027.8909%207.10681%2025.4904%208.00751%2022.7024C8.93036%2019.8461%208.6886%2016.6491%209.85579%2015.0374C11.038%2013.4052%2014.148%2012.6568%2016.5445%2010.9041C18.9238%209.16398%2020.5756%206.42097%2022.5117%205.78921C24.3392%205.19296%2027.3297%206.40433%2030.3331%206.40433C33.3722%206.40433%2036.3149%205.18886%2038.1546%205.78921C40.0875%206.41992%2041.7488%209.16867%2044.1221%2010.9042C46.5056%2012.6476%2049.6312%2013.409%2050.8107%2015.0375C51.9744%2016.6443%2051.7405%2019.8599%2052.6588%2022.7022V22.7023C53.5578%2025.4842%2055.6458%2027.893%2055.6458%2030.0002C55.6458%2032.1094%2053.5597%2034.5099%2052.659%2037.2979ZM41.1313%2022.4773C42.0466%2023.3927%2042.0466%2024.8766%2041.1313%2025.7918L29.4001%2037.523C28.4847%2038.4384%2027.0007%2038.4382%2026.0854%2037.523L19.5354%2030.9729C18.62%2030.0576%2018.6199%2028.5736%2019.5352%2027.6584C20.4506%2026.7432%2021.9348%2026.743%2022.8498%2027.6584L27.7427%2032.5512L37.8165%2022.4774C38.7318%2021.5621%2040.2159%2021.5621%2041.1313%2022.4773Z'%20fill='%23242424'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_0_810'%3e%3crect%20width='60'%20height='60'%20fill='white'%20transform='translate(0.333252)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="service__image" />
+                        <div class="service-info">
+                            <h4 class="service__name">High Quality</h4>
+                            <p class="service__description">crafted from top materials</p>
+                        </div>
+                    </div>
+                    <!--End service-item-->
+                    <div class="service-item">
+                        <img src="data:image/svg+xml,%3csvg%20width='61'%20height='60'%20viewBox='0%200%2061%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_0_818)'%3e%3cpath%20d='M56.0147%2031.102V3.77976C56.0147%202.80502%2055.2244%202.01477%2054.2497%202.01477H6.96186C5.98711%202.01477%205.19687%202.80502%205.19687%203.77976V33.2801C4.34544%2033.4042%203.51307%2033.7347%202.77671%2034.2814C0.4554%2035.9274%20-0.0936297%2039.6111%201.8508%2041.8828L9.80067%2051.5205C14.7217%2057.2799%2019.9492%2057.9855%2027.7206%2057.9855C34.3896%2057.9855%2037.3711%2058.015%2043.1832%2056.6906L48.8427%2055.337C49.7604%2056.6185%2051.2172%2057.4486%2052.855%2057.4486H55.643C58.4131%2057.4486%2060.6667%2055.0745%2060.6667%2052.1562V36.3785C60.6668%2033.5921%2058.6117%2031.3032%2056.0147%2031.102ZM48.0814%2034.7327L45.7297%2033.5383C41.8631%2031.5866%2037.3926%2031.5143%2033.4649%2033.3404C32.3934%2033.7619%2030.0562%2035.176%2028.8438%2035.1287H20.6835C17.9767%2035.1287%2015.7745%2037.3308%2015.7745%2040.0377V41.3249C15.7593%2041.3089%2015.7434%2041.2937%2015.7284%2041.2774L9.90104%2034.9521C9.54839%2034.5693%209.15221%2034.249%208.72696%2033.992V16.4811H23.1708V22.9511C23.1708%2023.9258%2023.9611%2024.7161%2024.9358%2024.7161H36.073C37.0478%2024.7161%2037.838%2023.9258%2037.838%2022.9511V16.4811H52.4848V31.1019C50.4226%2031.2612%2048.703%2032.7365%2048.0814%2034.7327ZM26.7007%2016.4811H34.3079V21.1861H26.7007V16.4811ZM52.4847%2012.9511H37.838V5.54475H52.4848V12.9511H52.4847ZM34.308%205.54475V12.9512H26.7008V5.54475H34.308ZM23.1707%205.54475V12.9512H8.72685V5.54475H23.1707ZM42.364%2053.2569C36.9949%2054.4866%2033.7613%2054.4368%2027.7839%2054.4368C20.4886%2054.4368%2016.9637%2054.3189%2012.5239%2049.2741L4.57406%2039.6365C3.19125%2037.8358%205.69589%2035.7102%207.30485%2037.3436L13.1323%2043.6691C14.6724%2045.2942%2016.6105%2046.1886%2018.9992%2046.2412H35.1557C36.1304%2046.2412%2036.9207%2045.4509%2036.9207%2044.4762C36.9207%2043.5014%2036.1304%2042.7112%2035.1557%2042.7112H19.3043V40.0375C19.3043%2039.2771%2019.9229%2038.6584%2020.6834%2038.6584H28.8437C30.6821%2038.7901%2033.3356%2037.255%2034.9531%2036.5411C37.8947%2035.1734%2041.243%2035.2275%2044.1351%2036.6873L47.8315%2038.5648V51.949L42.364%2053.2569ZM57.1369%2052.1561C57.1369%2053.1279%2056.4668%2053.9185%2055.6431%2053.9185H52.8551C52.0315%2053.9185%2051.3615%2053.1279%2051.3615%2052.1561V36.3785C51.3615%2035.4067%2052.0316%2034.616%2052.8551%2034.616H55.6431C56.4668%2034.616%2057.1369%2035.4066%2057.1369%2036.3785V52.1561Z'%20fill='%23242424'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_0_818'%3e%3crect%20width='60'%20height='60'%20fill='white'%20transform='translate(0.666748)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="service__image" />
+                        <div class="service-info">
+                            <h4 class="service__name">High Quality</h4>
+                            <p class="service__description">crafted from top materials</p>
+                        </div>
+                    </div>
+                    <!--End service-item-->
+                    <div class="service-item">
+                        <img src="data:image/svg+xml,%3csvg%20width='60'%20height='60'%20viewBox='0%200%2060%2060'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_0_824)'%3e%3cpath%20d='M54.6935%2023.9628C54.2992%2010.6825%2043.3741%200%2029.9999%200C16.6257%200%205.70059%2010.6825%205.30612%2023.9628L3.5293%2025.7396V37.7898L5.294%2039.5545V47.7647C5.294%2052.5652%209.19941%2056.4706%2013.9999%2056.4706H16.1858C16.9142%2058.5246%2018.8758%2060%2021.1764%2060H24.7058C27.0079%2060%2028.9705%2058.5225%2029.6978%2056.4664C29.7986%2056.4681%2029.8997%2056.4706%2029.9999%2056.4706C38.522%2056.4706%2045.6526%2050.3981%2047.2921%2042.3529H51.9073L56.4705%2037.7898V25.7396L54.6935%2023.9628ZM29.9999%203.52941C40.4741%203.52941%2049.1953%2011.174%2050.8806%2021.1765H47.2921C45.6526%2013.1313%2038.522%207.05882%2029.9999%207.05882C21.4778%207.05882%2014.3472%2013.1313%2012.7077%2021.1765H9.11918C10.8045%2011.174%2019.5257%203.52941%2029.9999%203.52941ZM43.6708%2021.1765C37.9662%2021.1594%2033.9368%2021.5068%2030.6147%2016.6506L29.0015%2014.2926L27.6152%2016.7907C25.5952%2020.4306%2022.8748%2021.1765%2019.4117%2021.1765H16.3289C17.9001%2015.0944%2023.4337%2010.5882%2029.9999%2010.5882C36.5661%2010.5882%2042.0997%2015.0944%2043.6708%2021.1765ZM12.3528%2038.8235H9.55436L7.05871%2036.3279V27.2015L9.55436%2024.7059H12.3528V38.8235ZM8.82341%2047.7647V42.3529H12.7042C13.3686%2045.6441%2014.9581%2048.6652%2017.3129%2051.0916C16.8193%2051.6191%2016.4321%2052.2467%2016.1858%2052.9412H13.9999C11.1455%2052.9412%208.82341%2050.6191%208.82341%2047.7647ZM24.7058%2056.4706H21.1764C20.2032%2056.4706%2019.4117%2055.6791%2019.4117%2054.7059C19.4117%2053.7328%2020.2032%2052.9412%2021.1764%2052.9412H24.7058C25.6788%2052.9412%2026.4705%2053.7328%2026.4705%2054.7059C26.4705%2055.6791%2025.6788%2056.4706%2024.7058%2056.4706ZM44.1175%2038.8235C44.1175%2046.608%2037.7844%2052.9412%2029.9999%2052.9412C29.8987%2052.9412%2029.7967%2052.9392%2029.6948%2052.9368C28.9652%2050.8851%2027.0047%2049.4118%2024.7058%2049.4118C21.0822%2049.4198%2021.14%2049.3936%2020.6884%2049.4352C17.6246%2046.7498%2015.8822%2042.9248%2015.8822%2038.8235V24.7059H19.4117C22.5348%2024.7059%2026.3384%2024.1909%2029.2826%2020.6076C33.1673%2024.6786%2037.9146%2024.7059%2042.1761%2024.7059H44.1175V38.8235ZM52.9411%2036.3279L50.4454%2038.8235H47.6469V24.7059H50.4454L52.9411%2027.2015V36.3279Z'%20fill='%23242424'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_0_824'%3e%3crect%20width='60'%20height='60'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" class="service__image" />
+                        <div class="service-info">
+                            <h4 class="service__name">High Quality</h4>
+                            <p class="service__description">crafted from top materials</p>
+                        </div>
+                    </div>
+                    <!--End service-item-->
+                </div>
+            </div>
+        </section>
+        <!--End .services-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-list">
+                    <div class="footer-item">
+                        <img src="/assets/logo-BBJ7Vw_Y.svg" alt="" />
+                        <p class="footer__address">
+                            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+                        </p>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-item">
+                            <h2 class="footer__title">Links</h2>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Home</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Shop</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Blog</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-item">
+                            <h2 class="footer__title">Help</h2>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Payment Options</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Returns</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Privacy Policies</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a href="" class="footer-menu-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <h2 class="footer__title">Newsletter</h2>
+                        <form action="" class="newsletter">
+                            <input
+                                type="text"
+                                class="newsletter__input"
+                                placeholder="Enter Your Email Address"
+                            />
+                            <button class="newsletter__btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="copyright">2023 furino. All rights reverved</p>
+            </div>
+        </footer>
+    </body>
+</html>
