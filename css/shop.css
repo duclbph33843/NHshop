@@ -111,3 +111,10 @@
     width: 188px;
     border-radius: 8px;
 }
+
+.btn.product-action__addtocart a {
+    text-decoration: none;
+    /* Xóa gạch chân */
+    color: #B88E2F;
+    /* Chuyển chữ thành màu vàng */
+}
